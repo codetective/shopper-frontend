@@ -99,6 +99,8 @@ const RegisterSale = async sale => {
   }
 }
 const DeleteStock = async stockname => {
+  loader.style.display = ''
+
   cartArray = ['']
   cart.innerHTML = ''
   regSaleBtn.classList.remove('disabled')
@@ -232,7 +234,7 @@ updateForm.addEventListener('submit', e => {
   UpdateStock(data)
 })
 
-cart.addEventListener('dblclick', (e) => {
+cart.addEventListener('click', (e) => {
   if (e.target.classList.contains('stk')) {
     e.target.parentNode.removeChild(e.target)
     let curr = cartArray.indexOf(e.target.textContent)
