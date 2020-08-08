@@ -39,16 +39,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 30px !important;
+  height: 35px !important;
   margin: 5px 0;
   text-transform: capitalize;
+}
+.stk:hover{
+  background: rgba(24, 177, 49, 0.05);
 }
 .stk input{
   width: 80px;
   height: 80%;
   border-radius: 5px;
-  outline: none;
-  border: .5px solid;
+  border: .5px solid !important;
+  background: rgba(0, 0, 0, 0.082);
   padding: 5px;
 }
 
