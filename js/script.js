@@ -235,5 +235,7 @@ updateForm.addEventListener('submit', e => {
 cart.addEventListener('dblclick', (e) => {
   if (e.target.classList.contains('stk')) {
     e.target.parentNode.removeChild(e.target)
+    let curr = cartArray.indexOf(e.target.textContent)
+    cartArray.splice(curr, 1)
   }
 })
